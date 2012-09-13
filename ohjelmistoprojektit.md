@@ -1,6 +1,6 @@
 # Ohjelmistoprojektit
 
-Ohjelmistoprojektit lähtevät usein liikkeelle siitä, että asiakas esim. pyytää tarjousta kilpailutuksen yhteydessä. Oikeastaan projekti alkaakin jo tässä vaiheessa, koska tarjouksen antaminen ei ole yksiselitteistä, vaan vaatii asiakkaan kanssa tehtävää alustavaa määrittelytyötä. Tasapainottelua vaatii se, osallistuako kilpailutukseen (eli onko voittaminen edes realistista), koska (järkevän) tarjouksen laatiminen vaatii resursseja.
+Ohjelmistoprojektit lähtevät usein liikkeelle siitä, että esim. asiakas pyytää tarjousta kilpailutuksen yhteydessä. Oikeastaan projekti alkaakin jo tässä vaiheessa, koska tarjouksen antaminen ei ole yksiselitteistä, vaan vaatii asiakkaan kanssa tehtävää alustavaa määrittelytyötä. Tasapainottelua vaatii se, osallistuako kilpailutukseen (eli onko voittaminen edes realistista), koska (järkevän) tarjouksen laatiminen vaatii resursseja.
 
 ## Hinnoittelusta
 
@@ -24,7 +24,7 @@ Projektin onnistumista voidaan mitata esim. seuraavilla tavoilla:
 2. Aikataulu
 3. Budjetti.
 
-Miksi sitten niin useat ohjelmistoprojektit epäonnistuvat jollain tasolla (usein aikataulu tai budjetti)? Jos tarkastellaan ohjelmistoprojektien tilastoja (esim. [IT Cortex](http://www.it-cortex.com/Stat_Failure_Rate.htm)), luvut ovat harmillisen huonoja. Joku voisi väittää yhden yleisen tekijän olevan alan nuori ikä (esim. verrattuna rakennusalaan), jonka takia vakiintuneita käytäntöjä (ns. kansanoppia) ei ole ehtinyt muodostua (kypsyyttä voi arvioida esim. [CMM eli Capability Maturity Model](http://en.wikipedia.org/wiki/Capability_Maturity_Model)).
+Miksi sitten niin useat ohjelmistoprojektit epäonnistuvat jollain tasolla (usein aikataulu tai budjetti)? Jos tarkastellaan ohjelmistoprojektien tilastoja (esim. [IT Cortex](http://www.it-cortex.com/Stat_Failure_Rate.htm)), luvut ovat harmillisen huonoja. Joku voisi väittää yhden yleisen tekijän olevan alan nuori ikä (esim. verrattuna rakennusalaan), jonka takia vakiintuneita käytäntöjä (ns. kansanoppia) ei ole ehtinyt muodostua (prosessien kypsyyttä voi arvioida esim. [CMM eli Capability Maturity Model](http://en.wikipedia.org/wiki/Capability_Maturity_Model)). Yleensä myös oletetaan, että ohjelmistoja rakennetaan samalla tavalla kuin taloja.
 
 > "We are still in the infancy of naming what is really happening on software development projects." - Alistair Cockburn
 
@@ -36,7 +36,7 @@ Ohjelmistotyö ja -projektit ovat pitkälti kompleksisuuden hallintaa. Yksi tapa
 
 Työmäärien arviointi tai projektin valmistuspäivämäärän ennustaminen on vaikeaa. Dilemma onkin, että projektin alkuvaiheessa pitäisi jo olla tiedossa paljon projektiin menee resursseja (vaikka lopputuote voi olla vielä kohtuullisen tuntematon)! Wikipediassa on listattuna [muutamia sovelluskehitykseen liittyviä arviointimenetelmiä](http://en.wikipedia.org/wiki/Cost_estimation_in_software_engineering).
 
-Eräs tapa arvioida valmistumisajankohta ketterissä projekteissa on laskea projektin vauhtia (velocity). Tämä perustuu siihen, että seurataan iteraatiossa toteutuneiden työmäärien (eli esim. tuntien, Story Pointtien tai kompleksisuuksien) keskiarvoa. Näin saadaan jonkinlainen arvio siitä, paljon saadaan aikaiseksi yhdessä iteraatiossa. Tästä voidaan laskea projektin valmistumiseen tarvittavien iteraatioiden (ja ajan) määrä jakamalla kokonaistyömäärä lasketulla vauhdilla, sekä hahmottaa riittääkö asetettu budjetti.
+Eräs tapa arvioida valmistumisajankohta ketterissä projekteissa on laskea projektin vauhtia (velocity). Tämä perustuu siihen, että seurataan iteraatiossa toteutuneiden työmäärien (eli esim. tuntien, Story Pointtien tai kompleksisuuksien) keskiarvoa. Näin saadaan jonkinlainen arvio siitä, paljonko saadaan aikaiseksi yhdessä iteraatiossa. Tästä voidaan laskea projektin valmistumiseen tarvittavien iteraatioiden (ja ajan) määrä jakamalla kokonaistyömäärä lasketulla vauhdilla, sekä hahmottaa riittääkö asetettu budjetti.
 
 Erään tutkimuksen mukaan [vähemmillä arvioilla saadaan ennustettua tarkempi lopputulos](http://softwaredevelopmenttoday.blogspot.de/2012/07/a-better-way-to-predict-project-release.html). Kannattaa suhtautua tuloksiin  varauksella, mutta mielestäni ihan mielenkiintoinen esimerkki arviointien arvaamattomuudesta.
 

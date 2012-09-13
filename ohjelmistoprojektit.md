@@ -30,7 +30,7 @@ Miksi sitten niin useat ohjelmistoprojektit epäonnistuvat jollain tasolla (usei
 
 Ohjelmistokehittäjien lisääminen projektiin (varsinkin loppuvaiheessa) harvoin parantaa sen edistymistahtia (kts. [Brookin laki](http://en.wikipedia.org/wiki/Brooks's_law)). Uusi tekijä tarvitsee aina perehdytystä, ja kestää aina hetkensä, ennen kuin omaksuu tiimille vakiintuneet työskentelymetodit. Myöskin kehittäjien väliset mahdolliset kommunikointipolut moninkertaistuvat nopeasti (tätä voidaan kuvata [seuraavalla graafilla](http://en.wikipedia.org/wiki/Complete_graph)). Tiukkaa aikataulua ei siis paikata henkilömäärän kasvattamisella. Pahimmassa tapauksessa tämä johtaa siihen, että aikataulun lisäksi myös budjetti ylitetään.
 
-Ohjelmistotyö ja -projektit ovat pitkälti kompleksisuuden hallintaa. Yksi tapa helpottaa monimutkaisten asioiden hahmottamista on jakaa ne pienempiin osakokonaisuuksiin. Ehkä tästä voisi olla hyötyä myös ohjelmistoprojekteissa?
+Ohjelmistotyö ja -projektit ovat pitkälti kompleksisuuden hallintaa. Yksi tapa helpottaa monimutkaisten asioiden hahmottamista on jakaa ne pienempiin osakokonaisuuksiin. Ehkä tästä voisi olla hyötyä myös ohjelmistoprojekteissa? Lisää ajankohtaista pohdintaa epäonnistumisten välttämiseen vaikka [täältä](http://www.ohjelmistoyrittajat.fi/blogi/2012/09/11/kuinka-it-jarjestelma-hankintaan-110-hinnalla-ja-miksi-18-mrd-en-potilastietojarjestelmahankkeesta-tulee-turskaa-osa-1/).
 
 ## Arviointi (työmäärät)
 

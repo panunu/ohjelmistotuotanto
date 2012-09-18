@@ -3,6 +3,7 @@
 1. [Mitä ohjelmistotyö on?](/mita-ohjelmistotyo-on/)
 2. [Ketterät menetelmät: Scrum](/agile-scrum/)
 3. [Ohjelmistoprojektit](/ohjelmistoprojektit/)
+4. [Määrittely, mallintaminen, dokumentointi](/maarittely-mallintaminen-dokumentaatio/)
 
 Yksinkertaistettuja, helposti luettavaan muotoon kirjoitettuja ajatuksia ohjelmistotyöhön liittyen. Kokoelma hyödyllisiä linkkejä, joihin syventyä mielenkiinnon kasvaessa. Toimii luentojen tukena.
 

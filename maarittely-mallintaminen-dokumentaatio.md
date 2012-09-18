@@ -22,31 +22,35 @@ Jos UML:n käytännöllisyys mietityttää, niin [tässä keskustelua aiheesta](
 
 ### Käyttötapauskuvaus ja käyttötapauskaavio (Use Case Diagram)
 
-Käyttötapauskaavion perustana toimii *käyttötapauskuvaus*. Käyttötapauskuvauksessa avataan toiminnallisuus sanallisesti. Käyttötapaukset ovatkin siis enemmän kirjoittamista, kuin kaavioiden avulla mallintamista. Käyttötapauskuvausten voisi sanoa olevan hyvin tarkasti kirjoitettuja käyttäjätarinoita (user story).
+[Käyttötapauskaavion](http://www.uml-diagrams.org/use-case-diagrams-examples.html) perustana toimii *käyttötapauskuvaus*. Käyttötapauskuvauksessa avataan toiminnallisuus sanallisesti. Käyttötapaukset ovatkin siis enemmän kirjoittamista, kuin kaavioiden avulla mallintamista. Käyttötapauskuvausten voisi sanoa olevan hyvin tarkasti kirjoitettuja käyttäjätarinoita (user story).
 
-Käyttötapausten kirjoittamisen avuksi on määritelty tietty rakenne, jossa kerrotaan [esim. esiehdot, kuvaus, sidosryhmät ja vaihtoehtoiset skenaariot](http://epf.eclipse.org/wikis/abrd/core.tech.common.extend_supp/guidances/examples/use_case_spec_CD5DD9B1.html). Esimerkkejä varsinaisista kaaviosta voi katsella [täältä](http://www.uml-diagrams.org/use-case-diagrams-examples.html).
+Käyttötapausten kirjoittamisen avuksi voidaan määritellä tietty rakenne (vaikka taulukkomuodossa), jossa kerrotaan [esim. esiehdot, kuvaus, sidosryhmät ja vaihtoehtoiset skenaariot](http://epf.eclipse.org/wikis/abrd/core.tech.common.extend_supp/guidances/examples/use_case_spec_CD5DD9B1.html).
 
 ### Luokkakaavio (Class Diagram)
 
-Luokkakaavio kuvaa oliopohjaisen järjestelmän luokkarakenteen määrittely-/suunnittelutasolla. Esimerkiksi luokan metodit voidaan ilmaista pseudokoodilla ilman konkreettisia tyypityksiä. Luokkakaaviossa keskitytään rakenteen mallintamiseen yleisellä tasolla, josta selviää esim. seuraavat: 
+[Luokkakaavio](http://www.uml-diagrams.org/class-diagrams-examples.html) kuvaa oliopohjaisen järjestelmän luokkarakenteen määrittely-/suunnittelutasolla. Esimerkiksi luokan metodit voidaan ilmaista pseudokoodilla ilman konkreettisia tyypityksiä. Luokkakaaviossa keskitytään rakenteen mallintamiseen yleisellä tasolla, josta selviää esim. seuraavat: 
 
 - rajapinnat, perintä, kompositio ja muut vastaavat yhteydet
 - attribuutit ja metodit
 - nimeäminen.
 
-Luokkakaavion tarkoitus on ohjata rakenteellisesti järkeviin OO-ratkaisuihin. Esimerkkejä [täältä](http://www.uml-diagrams.org/class-diagrams-examples.html).
+Luokkakaavio voi auttaa rakenteellisesti järkevien OO-ratkaisujen hahmottelussa ja suunnittelussa.
 
 ### Sekvenssikaavio (Sequence Diagram)
 
-Sekvenssikaavio muodostaa yhdessä luokkakaavion kanssa yleisen tavan mallintaa olio-ohjelmia. Sekvenssikaaviolla mallinnetaan olioiden interaktioita viestien avulla, eli minkälaisia reaktioketjuja tietyt tapahtumat aiheuttavat. Käytännössä kaaviosta selviää, mitä muita metodeja jokin tietty metodi saattaa kutsua ja minkälaista tietoa näiden välillä liikkuu.
+[Sekvenssikaavio](http://www.uml-diagrams.org/sequence-diagrams-examples.html) muodostaa yhdessä luokkakaavion kanssa yleisen tavan mallintaa olio-ohjelmia. Sekvenssikaaviolla mallinnetaan olioiden interaktioita viestien avulla, eli minkälaisia reaktioketjuja tietyt tapahtumat aiheuttavat. Käytännössä kaaviosta selviää, mitä muita metodeja jokin tietty metodi saattaa kutsua ja minkälaista tietoa näiden välillä liikkuu.
 Tämä myös auttaa hahmottamaan riippuvuuksia eri luokkien välillä.
 
-### Tilakaavio (State)
+### Tilakaavio (State Diagram)
 
-Tilakaaviota käytetään olion tai järjestelmän tilan kuvaamiseen. Kaaviosta selviää myös sallitut tilasiirtymät (esim. dokumentti voi siirtyä tilasta "luonnos" tilaan "julkaistu") Tilakaaviossa kuvataan seuraavat asiat:
+[Tilakaaviota](http://www.uml-diagrams.org/state-machine-diagrams-examples.html) käytetään olion tai järjestelmän tilan ja elinkaaren kuvaamiseen. Kaaviosta selviää myös sallitut tilasiirtymät (esim. dokumentti voi siirtyä "luonnos"-tilasta "julkaistu"-tilaan) Tilakaaviossa kuvataan seuraavat asiat:
 
 - Olion alkutila
 - Olion tilamuutokset (jotka johtuvat ulkoisista tapahtumista).
+
+### Aktiviteettikaavio (Activity Diagram)
+
+[Aktiviteettikaavio](http://www.uml-diagrams.org/activity-diagrams-examples.html) muistuttaa tilakaavioita, mutta kuvaa prosesseja ja niissä tapahtumia peräkkäisiä tai rinnakkaisia toimintoja. Aktiviteettikaaviolla voidaan esimerkiksi ilmaista ostoprosessin tapahtumat.
 
 # Dokumentointi
 
@@ -54,5 +58,10 @@ Ohjelmistojen tekemiseen kuuluu tärkeänä osana myös dokumentointi. Dokumento
 
 Seuraavaan listaan on koottu esimerkkejä erilaisista dokumenteista (niin koulu- kuin työelämästä).
 
-- [Määrittely: TuPa-tilanhallintajärjestelmä](http://www.cs.tut.fi/~otm/harjoitukset/tupa-maarittelydokumentti.pdf)
-- [Paljon erilaisia dokumentteja liittyen Kansallisen Terveysarkiston rajapintoihin (esim. eReseptin-rajapintamääritykset)](https://www.kanta.fi/hl7)
+- [Määrittelydokumentti](http://www.cs.tut.fi/~otm/harjoitukset/tupa-maarittelydokumentti.pdf): TuPa-tilanhallintajärjestelmä, esimerkki
+
+- [Projektisuunnitelma](http://www.elka.fi/useruploads/files/Projektisuunnitelma_1.2.pdf): Arkistojärjestelmän suunnittelu ja prototyyppi
+
+- [Tekninen suunnitelma (luonnos)](http://www.vm.fi/vm/fi/04_julkaisut_ja_asiakirjat/03_muut_asiakirjat/20101208Julkis/05_PERA_tekninen_maeaerittely_20101208.pdf): Julkishallinnon tietovarantojen yhteinen rajapintaratkaisu
+
+- [Erilaisia dokumentteja](https://www.kanta.fi/fi/hl7) liittyen Kansallisen Terveysarkiston rajapintoihin (esim. eReseptin-rajapintamääritykset)

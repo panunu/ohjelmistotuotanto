@@ -52,9 +52,17 @@ Tämä myös auttaa hahmottamaan riippuvuuksia eri luokkien välillä.
 
 [Aktiviteettikaavio](http://www.uml-diagrams.org/activity-diagrams-examples.html) muistuttaa tilakaavioita, mutta kuvaa prosesseja ja niissä tapahtumia peräkkäisiä tai rinnakkaisia toimintoja. Aktiviteettikaaviolla voidaan esimerkiksi ilmaista ostoprosessin tapahtumat.
 
-# Dokumentointi
+## Dokumentointi
 
-Ohjelmistojen tekemiseen kuuluu tärkeänä osana myös dokumentointi. Dokumentointikäytännöt vaihtelevat organisaation ja käytössä olevien menetelmien mukaan. Dokumenttien määrän vaikuttavat myös esim. projektin koko, tiimin koko ja laatujärjestelmät. Kriittisemmät järjestelmät noudattavat usein tiukempia prosesseja, jotka vaativat kattavampaa dokumentaatiota.
+Ohjelmistojen tekemiseen kuuluu tärkeänä osana myös dokumentointi. Dokumentointikäytännöt vaihtelevat organisaation ja käytössä olevien menetelmien mukaan. Dokumenttien määrään vaikuttavat myös esim. projektin koko, tiimin koko ja laatujärjestelmät. Kriittisemmät järjestelmät noudattavat usein tiukempia prosesseja, jotka vaativat kattavampaa dokumentaatiota. Ohjelmistoprojektiin saattaa kuulua esim. seuraavia dokumentteja:
+
+- projektisuunnitelma
+- (toiminnallinen) määrittely
+- tekninen määrittely
+- testaussuunnitelma
+- käyttöönottosuunnitelma
+- ylläpito-ohje
+- käyttöohje.
 
 Seuraavaan listaan on koottu esimerkkejä erilaisista dokumenteista (niin koulu- kuin työelämästä).
 

@@ -12,7 +12,7 @@ Määrittelyvirhe voi tulla kalliiksi, ja virheen aiheuttama haitta eskaloituu s
 
 ## UML
 
-UML, Unified Modeling Language, on _visuaalinen_ kieli, jota käytetään järjestelmien määrittelyyn, suunnitteluun ja dokumentointiin. UML on yleisesti tunnettu kuvausmenetelmä, jolla visualisoidaan pääasiassa oliopohjaisia järjestelmiä. UML:n perimmäinen tarkoitus on auttaa ymmärtämään järjestelmää pääosin teknisestä näkökulmasta. Yhtenäisen, standardoidun kielen tarkoitus on ohjata _yksiselitteisyyteen_, eli UML:ää osaavien pitäisi ymmärtää kuvatut asiat samalla tavalla. 
+UML, Unified Modeling Language, on _visuaalinen_ kieli, jota käytetään järjestelmien määrittelyyn, suunnitteluun ja dokumentointiin. UML on yleisesti tunnettu kuvausmenetelmä, jolla visualisoidaan pääasiassa oliopohjaisia järjestelmiä. UML:n perimmäinen tarkoitus on auttaa ymmärtämään järjestelmää pääosin teknisestä näkökulmasta. Yhtenäisen, standardoidun kielen tarkoitus on ohjata _yksiselitteisyyteen_, eli UML:ää osaavien pitäisi ymmärtää kuvatut asiat samalla tavalla. Huomaa, että myös ei-tekninen henkilö todennäköisesti ymmärtää asiat paremmin kaavioilla (esim. UML), tai ainakin paremmin kuin jos lähtisit esittelemään prosessia lähdekoodilla.
 
 UML:n tarkoitukseksi yleensä luonnetaan dokumentointi jälkikäteen tai suunnittelu etukäteen (jonka toteuttamisen voi ulkoistaa). Mutta sen sijaan, että dedikoitu UML-suunnittelija piirtäisi kiveenhakatut "ohjeet" ja antaisi ne ohjelmoijalle orjallisesti toteutettavaksi, kehittäjät voivat käyttää sitä itse UML:ää hyödyksi ideoidessaan. UML-kaavioita voi käyttää alustavien ideoiden hahmotteluun (jopa nopeammin kuin koodaamalla ja kokeilemalla) ja näin toivottavasti ohjata järjestelmää rakenteellisesti parempaan suuntaan.
 

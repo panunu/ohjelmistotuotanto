@@ -4,6 +4,7 @@
 2. [Ketterät menetelmät: Scrum](/agile-scrum/)
 3. [Ohjelmistoprojektit](/ohjelmistoprojektit/)
 4. [Määrittely, mallintaminen, dokumentointi](/maarittely-mallintaminen-dokumentaatio/)
+5. [Projektinhallintasovellukset](/projektinhallintasovellukset/)
 
 Yksinkertaistettuja, helposti luettavaan muotoon kirjoitettuja ajatuksia ohjelmistotyöhön liittyen. Kokoelma hyödyllisiä linkkejä, joihin syventyä mielenkiinnon kasvaessa. Toimii luentojen tukena.
 

@@ -1,35 +1,35 @@
-# Laatu: tekniikat, konventiot, suunnittelumallit
+# Laatua tekniikoilla, konventioilla ja suunnittelumalleilla
 
 Miksi ja miten tehdä siedettävää koodia, jota muutkin pystyvät ymmärtämään, eikä se hajoa käsiin? Kannattaa aloittaa pohdiskelu Uncle Bobin kohta jo 10 vuotta vanhalla, mutta silti pätevällä [vinkillä](http://www.artima.com/weblogs/viewpost.jsp?thread=51769).
 
-## Miksi
+## Laatu, ja miksi panostaa siihen
 
-- design debt
-- luet enemmän kuin kirjoitat
-- laatu
-- ongelmat
+Laatu voi olla hyvinkin subjektiivinen käsite. Mitä laatu ohjelmistoissa on? Laadun hahmottamista helpottaa, jos sen jakaa esim. sisäisiin (kehittäjien kokemiin) ja ulkoisiin (asiakkaan kokemiin) laatutekijöihin. Tässä esimerkiksi yksi jaottelu, mitä nämä sisäiset ja ulkoiset tekijät voivat olla: [http://www.ocoudert.com/blog/2011/04/09/what-is-software-quality/](http://www.ocoudert.com/blog/2011/04/09/what-is-software-quality/).
 
+Puutteet ulkoisissa laatutekijöissä tulee usein esille esim. toiminnallisuuteen tai käyttöliittymään tyytymättömän asiakkaan muodossa, mutta sisäiset laatupuutteet saattavat vaania piilossa kauemmin; asiakas ei nimittäin ohjelmistokoodia tarkastele vaan vastuu on ohjelmistokehittäjillä. Nämä puutteet kuitenkin saattaa tulla myöhemmin esille eri muodoissa:
+
+- virheiden määrä kasvaa
+- muutokset toiminnallisuuksissa vievät aina vaan enemmän aikaa
+- kustannukset kasvavat.
+
+Laadun heikkeneminen voi johtua vaikka siitä, että oikaistaan ratkaisussa, jotta saadaan nopeasti jotain ulos. Tämä johtaa ns. [tekniseen velkaan](http://www.scrumalliance.org/articles/14-technical-debt-and-design-death).
+ 
 Legacyn määritelmä?
 
-- tasapainottelu vanhan järjestelmän refaktoroinnin kanssa
+Tasapainottelu vaatii se, kuinka paljon vanhaa järjestelmää kannattaa refaktoroida. Kannattaa kuitenkin säilyttää jonkinlainen maalaisjärki, eikä orjallisesti noudattaa kaikkia mahdollisia sääntöjä.
+
+Mitä sitten refaktorointi on? Martin Fowler on muotoillut asian seuraavanlaisesti: "Refactoring is the process of changing a software system in such a way that it does not alter the external behavior of the code yet improves its internal structure". Täältä löytyy myös poimintoja käsitteestä, ja mitä siihen kuuluu: [http://c2.com/cgi/wiki?WhatIsRefactoring](http://c2.com/cgi/wiki?WhatIsRefactoring).
+
+> "When you feel the need to write a comment, first try to refactor the code so that any comment becomes unnecessary." - Martin Fowler 
 
 ## Code smells
 
+Huonon koodin voi tunnistaa tarkkailemalla tiettyjä piirteitä. Nämä piirteet ovat yksinkertaisia, joten ne on helppo tunnistaa, mutta samalla niihin on helppo sortua. Suosittelen lukemaan seuraavan listan erilaisista "hajuista":
+[http://www.codinghorror.com/blog/2006/05/code-smells.html](http://www.codinghorror.com/blog/2006/05/code-smells.html).
 
-> Any fool can write code that a computer can understand. Good programmers write code that humans can understand. - Martin Fowler
+Ja tässä myös käytännönläheinen esitys samaisesta aiheesta (PHP:n viitekehyksessä): [http://www.youtube.com/watch?feature=player_embedded&v=wmgnFbsaPvo](http://www.youtube.com/watch?feature=player_embedded&v=wmgnFbsaPvo). Ja jos haluat opetella kirjoittamaan nimenomaan huonoa koodia, niin tähänkin löytyy ohjeistusta: [http://thc.org/root/phun/unmaintain.html](http://thc.org/root/phun/unmaintain.html). Huonoa koodia kirjoittaessa kannattaa kuitenkin muistaa, että joku (vaikka sinä itse) joutuu sitä myöhemmin tulkitsemaan.
 
-- hajuisa koodi
-http://www.codinghorror.com/blog/2006/05/code-smells.html
-
-- nimeäminen
-- pitkät metodit
-- copy-pasta koodi
-
-> When you feel the need to write a comment, first try to refactor the code so that any comment becomes unnecessary. - Martin Fowler 
-
-- varo överinoudattamista!
-
-Kuinka kirjoittaa huonoa koodia: http://thc.org/root/phun/unmaintain.html
+> "Any fool can write code that a computer can understand. Good programmers write code that humans can understand." - Martin Fowler
 
 ## Suunnittelumalleja, standardeja ja konventioita
 
@@ -48,8 +48,6 @@ Samoja Java-maailmassa?
 ### Dependency Injection
 
 ### Domain-driven design
-
-
 
 ## Työskentelymetodit ja -tekniikat
 

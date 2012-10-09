@@ -12,11 +12,7 @@ Puutteet ulkoisissa laatutekijöissä tulee usein esille esim. toiminnallisuutee
 - muutokset toiminnallisuuksissa vievät aina vaan enemmän aikaa
 - kustannukset kasvavat.
 
-Laadun heikkeneminen voi johtua vaikka siitä, että oikaistaan ratkaisussa, jotta saadaan nopeasti jotain ulos. Tämä johtaa ns. [tekniseen velkaan](http://www.scrumalliance.org/articles/14-technical-debt-and-design-death).
- 
-Legacyn määritelmä?
-
-Tasapainottelua vaatii se, kuinka paljon vanhaa järjestelmää kannattaa refaktoroida. Kannattaa kuitenkin säilyttää jonkinlainen maalaisjärki, eikä orjallisesti noudattaa kaikkia mahdollisia sääntöjä.
+Laadun heikkeneminen voi johtua vaikka siitä, että oikaistaan ratkaisussa, jotta saadaan nopeasti jotain ulos. Tämä johtaa ns. [tekniseen velkaan](http://www.scrumalliance.org/articles/14-technical-debt-and-design-death). Tätä velkaa voi välttää tai vähentää esimerkiksi suunnittelulla, testien kirjoittamisella ja refaktoroinnilla.
 
 Mitä sitten refaktorointi on? Martin Fowler on muotoillut asian seuraavanlaisesti: "Refactoring is the process of changing a software system in such a way that it does not alter the external behavior of the code yet improves its internal structure". Täältä löytyy myös poimintoja käsitteestä, ja mitä siihen kuuluu: [http://c2.com/cgi/wiki?WhatIsRefactoring](http://c2.com/cgi/wiki?WhatIsRefactoring).
 
@@ -33,29 +29,40 @@ Tässä myös [käytännönläheinen presentaatio](http://www.youtube.com/watch?
 
 ## Suunnittelumalleja, standardeja ja konventioita
 
+Tämän otsikon alle on listattu muutamia järkeviä ajattelu- tai työskentelytapoja, jotka helpottavat laadun ylläpitämistä.
+
 ### DRY
 
 Do not repeat yourself, eli älä toista itseäsi. Ei siis copypasta-koodia!
 
 ### Boyscout Rule
+
 Partiolaisten sääntö: jätä leiripaikka siistimmäksi kuin mitä se oli tullessasi. Eli refaktoroi aikaisempaa koodia tarvittaessa.
 
 ### Single Responsibility Principle
-Yksi luokka käsittelee yhtä asiaa. Vältetään monoliitteja, tuhansien rivien pituisia luokkia, jotka tekevät puolet järjestelmän toiminnoista.
+
+Yhdellä luokalla on yksi vastuualue. Vältetään monoliitteja, tuhansien rivien pituisia luokkia, jotka tekevät puolet järjestelmän toiminnoista.
 
 ### Koodistandardit/-käytännöt
 
-Yhdenmukaistetaan koodin ulkoasua standardeilla. Esimerkkiä tästä: [PHP: PSR-2 coding style guide](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) tai [Code conventions for Java](http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html).
+Yhdenmukaistetaan koodin ulkoasua (sisennökset, kommentointi, rakenteet) standardeilla. Esimerkkiä tästä: [PHP: PSR-2 coding style guide](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) tai [Code conventions for Java](http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html). 
 
-### MVC
+### Suunnittelumallit
 
-### Dependency Injection
+Olio-ohjelmoinnin maailmaan kuuluu yleisiä suunnittelumalleja (design patterns), joilla voidaan ratkaista erilaisia ongelmakohtia. Näitä voit tarkastella esim. seuraavista lähteistä:
 
-### Domain-driven design
+- [http://c2.com/cgi/wiki?SoftwareDesignPatternsIndex](http://c2.com/cgi/wiki?SoftwareDesignPatternsIndex)
+- [http://www.oodesign.com](http://www.oodesign.com)
+
+### SOLID
+
+Konsepti, joka koostuu tietyistä suunnittelumalleista, joilla pyritään vähentämään huonoa koodia: [http://en.wikipedia.org/wiki/Solid_(object-oriented_design)](http://en.wikipedia.org/wiki/Solid_(object-oriented_design)).
 
 ## Työskentelymetodit ja -tekniikat
 
 ### Pariohjelmointi (Pair programming)
+
+Pariohjelmoinnissa kaksi ohjelmoijaa työskentelee saman tehtävän parissa, mutta käytössä on vain yksi näppäimistö. Toisen rooli  on varsinaisen koodin kirjoittaminen (driver), kun taas toinen keskittyy suurempiin linjoihin: mitä seuraavaksi, voisiko tämän ratkaista paremmin, löytyykö virheitä (navigator). Rooleja vaihdetaan sovituin väliajoin. Lisää aiheesta: [http://www2.yk.psu.edu/~sg3/cmpbd205/assign/week01/ACMarticlePairProgramming.pdf](http://www2.yk.psu.edu/~sg3/cmpbd205/assign/week01/ACMarticlePairProgramming.pdf).
 
 ### Koodin katselmointi (Code review)
 
@@ -67,7 +74,7 @@ Koodin katselmointi on hyvä tapa oppia. Katselmoinnilla voi yhtenäistää käy
 
 ### TDD 
 
-Testivetoinen kehitys. Yksinkertaisesti tarkoittaa sitä, että aina ennen tuotantokoodin kirjoittamista tehdään testitapaus valmiiksi.
+Testivetoinen kehitys. Yksinkertaistettuna tarkoittaa sitä, että aina aluksi kirjoitetaan testitapaus, jota vasten toteutetaan varsinainen tuotantokoodi. Näin varmistetaan, että ohjelma tekee sen mikä on testien mukaan tarkoitus.
 
 ### Pomodoro-tekniikka
 

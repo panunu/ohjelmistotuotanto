@@ -41,7 +41,7 @@ Scrumiin kuuluu seuraavat palaverit:
 
 **Sprint Planning** pidetään jokaisen iteraation alussa. Tämän aikana suunnitellaan esim. sprintin pituus ja mitä tehdään. Yleensä myös viimeistään tässä vaiheessa käydään läpi, ovatko työstettäväksi valitut käyttäjätarinat määritelty tarpeeksi hyvin. 
 
-**Daily Scrum** on päivittäinen lyhyt (n. 10-15 min) tilannepäivitys tiimin jäsenten kesken. Huomaa, että tähän ei osallistu projektin ulkopuoliset henkilöt häiritsemään. s"Kokous" pidetään seisten (jotta kokous todellakin pysyy lyhyenä), ja jokainen kertoo vuorollaan kolme seuraavaa asiaa:
+**Daily Scrum** on päivittäinen lyhyt (n. 10-15 min) tilannepäivitys tiimin jäsenten kesken. Huomaa, että tähän ei osallistu projektin ulkopuoliset henkilöt häiritsemään. "Kokous" pidetään seisten (jotta kokous todellakin pysyy lyhyenä), ja jokainen kertoo vuorollaan kolme seuraavaa asiaa:
 
 1. Mitä olen tehnyt viimeksi
 2. Mitä tulen tekemään seuraavaksi

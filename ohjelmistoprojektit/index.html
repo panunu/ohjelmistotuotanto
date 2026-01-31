@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohjelmistoprojektit - Käytännön ohjelmistotuotanto</title>
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
+    <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+    <div class="sixteen columns"><h1>Ohjelmistoprojektit</h1>
+
+<p>Ohjelmistoprojektit lähtevät usein liikkeelle siitä, että esim. asiakas pyytää tarjousta kilpailutuksen yhteydessä. Oikeastaan projekti alkaakin jo tässä vaiheessa, koska tarjouksen antaminen ei ole yksiselitteistä, vaan vaatii asiakkaan kanssa tehtävää alustavaa määrittelytyötä. Tasapainottelua vaatii se, osallistuako kilpailutukseen (eli onko voittaminen edes realistista), koska (järkevän) tarjouksen laatiminen vaatii resursseja.</p>
+
+<h2>Hinnoittelusta</h2>
+
+<p>Projekteihin sovellettavia hinnoittelumalleja on yhtä paljon kuin projekteja, mutta mainittakoon silti muutama yleispätevä esimerkki:</p>
+
+<ul>
+<li>Tuntiveloitus</li>
+<li>Kiinteä hinta (fixed)</li>
+<li>Tavoitehinta (target).</li>
+</ul>
+
+<p><strong>Tuntiveloituksessa</strong> hinta riippuu projektiin käytetystä työmäärästä (tunneista). Taloudellinen riski onkin asiakkaalla, koska ei voida olla varmoja, haluaako toimittaja palvella asiakasta parhaansa mukaan, vai laskuttaa mahdollisimman paljon.</p>
+
+<p><strong>Kiinteähintaisessa</strong> projektissa riski on toimittajalla. Toisaalta sillä on mahdollisuus tehdä hyvin voittoa siinä tapauksessa, että projekti valmistuu huomattavasti oletettua nopeammin. Muutospyynnöt kuitenkin yleensä muuttavat hintaa. Paha virhe on tehdä kiinteähintainen sopimus ketterässä projektissa.</p>
+
+<p><strong>Tavoitehinta</strong> saattaa olla usein realistinen vaihtoehto. Projektin hinnalle asetetaan raja, esim. 100 000 €. Jos laskutettavan työn tuntien kokonaishinta ylittää tämän 100 000 €:n rajan, ylimenevä työ laskutetaan esim. omakustannehintaan (sopimuksesta riippuen).</p>
+
+<h2>Onnistumisia?</h2>
+
+<p>Projektin onnistumista voidaan mitata esim. seuraavilla tavoilla:</p>
+
+<ol>
+<li>Hyöty (esim. liiketaloudellinen)</li>
+<li>Aikataulu</li>
+<li>Budjetti.</li>
+</ol>
+
+<p>Miksi sitten niin useat ohjelmistoprojektit epäonnistuvat jollain tasolla (usein aikataulu tai budjetti)? Jos tarkastellaan ohjelmistoprojektien tilastoja (esim. <a href="http://www.it-cortex.com/Stat_Failure_Rate.htm">IT Cortex</a>), luvut ovat harmillisen huonoja. Joku voisi väittää yhden yleisen tekijän olevan alan nuori ikä (esim. verrattuna rakennusalaan), jonka takia vakiintuneita käytäntöjä (ns. kansanoppia) ei ole ehtinyt muodostua (prosessien kypsyyttä voi arvioida esim. <a href="http://en.wikipedia.org/wiki/Capability_Maturity_Model">CMM eli Capability Maturity Model</a>). Yleensä myös oletetaan, että ohjelmistoja rakennetaan samalla tavalla kuin taloja.</p>
+
+<blockquote>
+  <p>"We are still in the infancy of naming what is really happening on software development projects." - Alistair Cockburn</p>
+</blockquote>
+
+<p>Ohjelmistokehittäjien lisääminen projektiin (varsinkin loppuvaiheessa) harvoin parantaa sen edistymistahtia (kts. <a href="http://en.wikipedia.org/wiki/Brooks's_law">Brookin laki</a>). Uusi tekijä tarvitsee aina perehdytystä, ja kestää aina hetkensä, ennen kuin omaksuu tiimille vakiintuneet työskentelymetodit. Myöskin kehittäjien väliset mahdolliset kommunikointipolut moninkertaistuvat nopeasti (tätä voidaan kuvata <a href="http://en.wikipedia.org/wiki/Complete_graph">seuraavalla graafilla</a>). Tiukkaa aikataulua ei siis paikata henkilömäärän kasvattamisella. Pahimmassa tapauksessa tämä johtaa siihen, että aikataulun lisäksi myös budjetti ylitetään.</p>
+
+<p>Ohjelmistotyö ja -projektit ovat pitkälti kompleksisuuden hallintaa. Yksi tapa helpottaa monimutkaisten asioiden hahmottamista on jakaa ne pienempiin osakokonaisuuksiin. Ehkä tästä voisi olla hyötyä myös ohjelmistoprojekteissa? Lisää ajankohtaista pohdintaa epäonnistumisten välttämiseen vaikka <a href="http://www.ohjelmistoyrittajat.fi/blogi/2012/09/11/kuinka-it-jarjestelma-hankintaan-110-hinnalla-ja-miksi-18-mrd-en-potilastietojarjestelmahankkeesta-tulee-turskaa-osa-1/">täältä</a>.</p>
+
+<h2>Arviointi (työmäärät)</h2>
+
+<p>Työmäärien arviointi tai projektin valmistuspäivämäärän ennustaminen on vaikeaa. Dilemma onkin, että projektin alkuvaiheessa pitäisi jo olla tiedossa paljon projektiin menee resursseja (vaikka lopputuote voi olla vielä kohtuullisen tuntematon)! Wikipediassa on listattuna <a href="http://en.wikipedia.org/wiki/Cost_estimation_in_software_engineering">muutamia sovelluskehitykseen liittyviä arviointimenetelmiä</a>.</p>
+
+<p>Eräs tapa arvioida valmistumisajankohta ketterissä projekteissa on laskea projektin vauhtia (velocity). Tämä perustuu siihen, että seurataan iteraatiossa toteutuneiden työmäärien (eli esim. tuntien, Story Pointtien tai kompleksisuuksien) keskiarvoa. Näin saadaan jonkinlainen arvio siitä, paljonko saadaan aikaiseksi yhdessä iteraatiossa. Tästä voidaan laskea projektin valmistumiseen tarvittavien iteraatioiden (ja ajan) määrä jakamalla kokonaistyömäärä lasketulla vauhdilla, sekä hahmottaa riittääkö asetettu budjetti.</p>
+
+<p>Erään tutkimuksen mukaan <a href="http://softwaredevelopmenttoday.blogspot.de/2012/07/a-better-way-to-predict-project-release.html">vähemmillä arvioilla saadaan ennustettua tarkempi lopputulos</a>. Kannattaa suhtautua tuloksiin  varauksella, mutta mielestäni ihan mielenkiintoinen esimerkki arviointien arvaamattomuudesta.</p>
+
+<h2>Muuta</h2>
+
+<p>Timo Lehtimäen <em>Ohjelmistoprojektit käytännössä</em> -kirjassa käsitellään ohjelmistoprojekteihin liittyviä aiheita mukavan rennosti, mutta asiallisesti. Suosittelen lukemaan varsinkin siinä tapauksessa, jos projektien johtaminen, tai minkälaisiin haasteisiin siinä törmää, saattaa kiinnostaa.</p>
+
+<blockquote>
+  <p>"All projects are different, but you have to treat each one with care. Sometimes you get to build a luxury yacht; other times, it'll be a rowboat. You still have to make sure the thing doesn't spring a leak." - Stefan G. Bucher</p>
+</blockquote>
+
+<p><a href="../">← Takaisin etusivulle</a></p>
+
+    </div>    </div>
+</body>
+</html>

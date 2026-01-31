@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketterät menetelmät: Scrum - Käytännön ohjelmistotuotanto</title>
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
+    <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+    <div class="sixteen columns"><h1>Ketterät menetelmät: Scrum</h1>
+
+<h2>Agile</h2>
+
+<p>Agilen, eli ketterien menetelmien, ajatukset perustuvat n. 10 vuotta sitten Utahissa koottuun manifestiin. Manifestin luonnissa oli mukana nimekkäitä ohjelmistoalan guruja. Ketterien projektien perusajatuksena on keskittyminen itse tuotteeseen ja sitä kehittäviin ihmisiin sen sijaan, että pääpaino olisi projektin prosessien pyörittämisessä. Manifestiin voi tarkemmin tutustua osoitteessa <a href="http://agilemanifesto.org">http://agilemanifesto.org</a>, joka on käännetty myös suomeksi.</p>
+
+<p>Miksi muuten ketterät menetelmät ovat ylipäätään syntyneet? Selityksenä voi olla esimerkiksi turhautuneisuus byrokratiaan ja raskaisiin prosesseihin. Vaikka käytettiin paljon energiaa projektin kehittämiseen, koettiin, ettei asiakas saanut rahoillensa vastinetta, eikä tiimikään ollut tyytyväinen tulokseensa. Tärkeinä tekijöinä <a href="http://agilemanifesto.org/iso/fi/principles.html">manifestin periaatteista</a> nouseekin esille arvon tuottaminen asiakkaalle ja tiimin kompetenssin ja prosessien jatkuva kehittäminen.</p>
+
+<h2>Scrum</h2>
+
+<p>Scrum tarjoaa viitekehyksen projektien pyörittämiseen, ottamatta kuitenkaan tarkemmin kantaa toteutustapoihin tai -tekniikoihin (toisin kuin esimerkiksi Extreme Programming, XP). Vaikka Scrum saattaa alkuun vaikuttaa vähän hankalalta uusien käsitteiden takia, niin käytännössä prosessi pyörii kohtuullisen luonnollisesti.</p>
+
+<h3>Työvälineet</h3>
+
+<p>Scrum sisältää seuraavanlaisia <a href="http://upload.wikimedia.org/wikipedia/commons/5/58/Scrum_process.svg">käsitteitä tai vaiheita</a>:</p>
+
+<ul>
+<li>User Story</li>
+<li>Product Backlog</li>
+<li>Sprint</li>
+<li>Sprint Backlog</li>
+<li>Potentially Shippable Product.</li>
+</ul>
+
+<p><strong>User Story</strong> (käyttäjätarina) on yksi järjestelmän toiminnallisuuksista kuvattuna lauseena, jonka asiakas ymmärtää (ei siis sisällä teknistä jargonia). Esimerkki käyttäjätarinasta:</p>
+
+<p>"Opettaja voi hyväksyä ilmoittautuneen opiskelijan kurssille"</p>
+
+<p>Eli toisinsanoen käyttäjätarina kuvaa <em>kuka tekee ja mitä</em>, sekä joskus myös <em>miksi</em> (eli mikä hyöty tästä toiminnosta seuraa). Tuotteella on siis useita käyttäjätarinoita, jotka koostamalla voi hahmottaa, minkälainen ohjelmisto oikein on kyseessä. Kaikki käyttäjätarinat kuuluvat <strong>Product Backlogiin</strong>. Tämä on asiakkaan ns. toivomuskaivo, jossa listataan kaikki asiakkaan haluamat toiminnallisuudet (yleensä käyttäjätarinoiden muodossa). Product Backlog on hyvä pitää ajankohtaisena. Tämä sisältää sen, että Backlogin käyttäjätarinoita prioritisoidaan, ja tarkistetaan, että käyttäjätarinat ovat ylipäätään enää ajankohtaisia, ja muutetaan niitä tarvittaessa (<a href="http://www.agilejournal.com/articles/columns/column-articles/2647-grooming-the-product-backlog">Backlog Grooming</a>).</p>
+
+<p><strong>Sprint</strong> on iteraatio, ajallisesti määritelty jakso, joka on pituudeltaan tyypillisesti esim. 1-2 viikkoa. Jokaiselle Sprintille määritetään <strong>Sprint Backlog</strong>, joka sisältää Product Backlogista valittuja käyttäjätarinoita. Sprintin aikana on tarkoitus toteuttaa nämä Sprint Backlogissa olevat käyttäjätarinat.</p>
+
+<p>Sprintin lopussa syntyy osa ohjelmistoa, <strong>Potentially Shippable Product</strong>, joka ideaalitilanteessa voidaan viedä suoraan tuotantoon. Näin iteraation aikana toteutettu toiminnallisuus alkaa tuottamaan heti lisäarvoa asiakkaalle.</p>
+
+<h3>Palaverit</h3>
+
+<p>Scrumiin kuuluu seuraavat palaverit:</p>
+
+<ul>
+<li>Sprint Planning</li>
+<li>Daily Scrum</li>
+<li>Sprint Review</li>
+<li>Retrospective.</li>
+</ul>
+
+<p><strong>Sprint Planning</strong> pidetään jokaisen iteraation alussa. Tämän aikana suunnitellaan esim. sprintin pituus ja mitä tehdään. Yleensä myös viimeistään tässä vaiheessa käydään läpi, ovatko työstettäväksi valitut käyttäjätarinat määritelty tarpeeksi hyvin. </p>
+
+<p><strong>Daily Scrum</strong> on päivittäinen lyhyt (n. 10-15 min) tilannepäivitys tiimin jäsenten kesken. Huomaa, että tähän ei osallistu projektin ulkopuoliset henkilöt häiritsemään. s"Kokous" pidetään seisten (jotta kokous todellakin pysyy lyhyenä), ja jokainen kertoo vuorollaan kolme seuraavaa asiaa:</p>
+
+<ol>
+<li>Mitä olen tehnyt viimeksi</li>
+<li>Mitä tulen tekemään seuraavaksi</li>
+<li>Onko esteitä/hidasteita/ongelmia.</li>
+</ol>
+
+<p>Pidemmät keskustelut on tarkoitus pitää dailyn ulkopuolella.  Joskus daily saattaa tuntua turhauttavalta, mutta kannattaa käyttää tämä hetki hyödyksi. Sen aikana voit hetkeksi hengähtää, ja keskittyä pohtimaan mitä kannattaisi tehdä seuraavaksi.</p>
+
+<p><strong>Sprint Review:n</strong> aikana esitellään sprintin aikana toteutetut toiminnallisudeet asiakkaalle (eli demo itse tuotteesta), eikä pidetä tuotteen kannalta epärelevantteja kalvosulkeisia. Palaverin yhteydessä Product Owner yleensä myös hyväksyy tehdyt toiminnallisuudet.</p>
+
+<p><strong>Retrospective</strong> (latinaksi <em>retrospectare</em>, eli "katso taakse"), pidetään sprintin lopuksi. Sen aikana tarkastellaan kriittisesti edellistä sprinttiä ja yritetään parantaa prosesseja seuraavaa iteraatiota varten. Vinkkejä retrospektiivin pitämiseen löytyy vaikka <a href="http://blog.scrumphony.com/2012/09/inject-purpose-into-retrospectives/">täältä</a>.</p>
+
+<h3>Roolit</h3>
+
+<p>Scrumissa on kolme roolia:</p>
+
+<ul>
+<li>Scrum-tiimi</li>
+<li>Scrum Master</li>
+<li>Product Owner.</li>
+</ul>
+
+<p><strong>Scrum-tiimi</strong> koostuu tietysti toteuttajista. Yleensä tiimin koko on 7 ± 2, ottaen tietysti huomioon, että pieneen projektiin ei tarvitse välttämättä näin montaa ohjelmistokehittäjää. Mutta jos kehittäjämäärä menee tämän rajan yli, voi harkita projektin jakamista pienempiin osiin (useammalle tiimille).</p>
+
+<p><strong>Scrum Master</strong> toimii "palvelijana" (ns. servant leader) tiimille. Hänen tehtävänään on esimerkiksi ratkaista mahdolliset ongelmatilanteet (impediments); asiat, jotka häiritsevät tiimin tuottavuutta. </p>
+
+<p><strong>Product Owner</strong> on asiakas, tai asiakkaan edustaja. Vaatimuksena on, että Product Ownerin hallitsee edustamansa liiketoiminnan. Hänen tehtävänään on päättää mitä tällä hetkellä ja seuraavaksi työstetään. Priorisointi onkin yksi hänen tärkeimmistä tehtävistään. Product Owner voi järjestää toteutettavat toiminnallisuudet esim. arvioidun ROI:n (Return On Investment) perusteella. Hänen kauttaan yleensä hyväksytetään iteraation aikana syntynyt lopputulos.</p>
+
+<p>Lisää Scrumista voi ja kannattaa lukea esim. <a href="http://www.scribd.com/doc/44447453/Scrum-Guide-Fi">Scrum Guidesta</a>. Tässä myös <a href="http://www.scrumalliance.org/articles/39-glossary-of-scrum-terms">hyvä kooste Scrumin termeistä</a>.</p>
+
+<h3>Scrum-tehtävätaulu (Kanban-taulu)</h3>
+
+<p><a href="http://upload.wikimedia.org/wikipedia/commons/1/1b/Scrum_task_board.jpg">Tehtävätaulun</a> tarkoitus on helpottaa sprintin aikana suoritettavien tehtävien seurantaa. Taululle lisätään sprintin käyttäjätarinat/toiminnallisuudet Post-it -lapuilla. </p>
+
+<p>Taulussa on muutamia, projektikohtaisesti määritettäviä pystypalkkeja, esim.:</p>
+
+<ol>
+<li>Not started</li>
+<li>In progress</li>
+<li>Testing</li>
+<li>Done.</li>
+</ol>
+
+<p>Nämä kolumnit kuvaavat käyttäjätarinan tämänhetkistä tilaa. Käyttäjätarina etenee taululla vaakatasossa yhden vaiheen kerrallaan.  </p>
+
+<p>Fyysisen taulun ongelmaksi muodostuu kuitenkin mahdollinen läpinäkymättömyys sidosryhmille, joka taas on vastoin Agilen periaatteita. Myöskin ylläpidettävyys hankaloituu nopeasti, kun tehtävien määrä taululla kasvaa. Ratkaisuna tähän on erilaiset Scrumiin soveltuvat ohjelmistot, kuten <a href="http://www.agilefant.org">Agilefant</a> tai <a href="http://www.atlassian.com/software/jira/overview">Jira</a>.</p>
+
+<h2>Maailma on nyt pelastettu, kiitos Agilen?</h2>
+
+<p>Huomioitavaa on, että <strong>ei ole olemassa</strong> yhtä tiettyä menetelmää (ns. silver bullet), joka soveltuu kaikkiin projekteihin ja ratkaisee jokaisen ongelman, vaan menetelmät kannattaa harkita projekti- tai tiimikohtaisesti (sama pätee teknologiavalintoihin). Jos haluat tietää, miten ketteryys toimii oikeassa maailmassa, niin tässä esim. Microsoftin tekemä <a href="http://research.microsoft.com/pubs/56015/agiledevatms-esem07.pdf">tutkielma Agile-kokemuksistaan</a>.</p>
+
+<p><a href="../">← Takaisin etusivulle</a></p>
+
+    </div>    </div>
+</body>
+</html>

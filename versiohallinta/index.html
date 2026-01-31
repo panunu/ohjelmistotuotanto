@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versiohallinta - Käytännön ohjelmistotuotanto</title>
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
+    <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+    <div class="sixteen columns"><h1>Versiohallinta</h1>
+
+<p>Versiohallinta on lähes välttämätön arkipäivän työväline, ja sitä käytetään kaikissa vakavasti otettavissa ohjelmistoalan yrityksissä. Versiohallinta helpottaa <em>samanaikaista työskentelyä samojen tiedostojen kanssa</em>. Versiohallinta toimii samalla myös yksinkertaisena varmuuskopiointimetodina.</p>
+
+<h2>Miksi versiohallintaa tarvitaan</h2>
+
+<p>Versiohallinta ratkaisee useita (varsinkin tiimityössä ilmeneviä) ongelmia. Pari yksinkertaista esimerkkiä:</p>
+
+<ol>
+<li>Ohjelmoija A tekee muutoksen</li>
+<li>Ohjelmoija B haluaa uusimman version projektista.</li>
+</ol>
+
+<p><strong>Ongelma</strong>: mistä saada uusimmat tiedostot, ja mistää tietää mitkä tiedostot ovat muuttuneet?</p>
+
+<p><strong>Tai</strong></p>
+
+<ol>
+<li>Ohjelmoija A muokkaa tiedostoja 1 ja 2</li>
+<li>Ohjelmoija B tekee myös muutoksia tiedostoon 2 (ja vielä samanaikaisesti)</li>
+<li>Molemmat haluavat jakaa muutoksensa muille.</li>
+</ol>
+
+<p><strong>Ongelma</strong>: mitkä muutokset pitää säilyttää ja mitkä niistä ovat uusimpia?</p>
+
+<h2>Git</h2>
+
+<p>Git on vuonna 2005 julkaistu (hajautettu) versiohallintajärjestelmä. Git kehitettiin Linuxin kernelin muutosten hallitsemiseksi, ja Gitin kehittämisen aloitti itse Linus Torvalds. Jos haluat tietää enemmän Gitin taustasta (tai et ole ennen kuullut hänen puheitaan), niin voit tutustua <a href="http://www.youtube.com/watch?v=4XpnKHJAok8">seuraavaan Torvaldsin presentaatioon Googlella</a>. Versiohallinnasta ja Gitistä voi lukea tai katsella jälkimmäisen dokumentaatiosivuilta: <a href="http://git-scm.com/documentation">http://git-scm.com/documentation</a>.</p>
+
+<h2>Käsitteitä</h2>
+
+<h3>Repository</h3>
+
+<p>Repository on "varasto", jossa lähdekoodi on säilötty yhdessä versiohallintaan liittyvien tietojen (esim. historia) kanssa.</p>
+
+<h3>Commit</h3>
+
+<p>Versiohallinta seuraa muutoksia tiedostojen sisällössä (jopa merkkitasolla). Muutosten jälkeen ohjelmoija haluaa hyväksyä muutokset (change-set). Silloin tehdään ns. commit. Commit sisältää nämä muutokset, ja järkevän viestin siitä, mitä muutokset saivat aikaan. Commit lisää muutokset projektin lähdekoodin ns. aikajanalle (branchiin).</p>
+
+<h3>Branch</h3>
+
+<p>Oletuksena kaikki commitit, eli muutokset, lisätään ns. master-branchiin (haara). Näitä brancheja voi olla useita samanaikaisesti (esim. oma branch, kun teet uutta toiminnallisuutta), jolloin muutokset eivät vaikuta kuin aktiiviseen branchiin. Branchit voi yhdistää (merge) muihin brancheihin (yleensä takaisin masteriin).</p>
+
+<h2>Branching</h2>
+
+<p>Ohjelmistotyössä usein törmäät tilanteeseen, jossa et ole ihan varma, miten ongelma kannattaisi teknisesti ratkaista. Tämän takia on tärkeää, että voit kokeilla toteuttamista ja palata helposti takaisin lähtötilanteeseen. Toisaalta jos toteutus onnistuukin, haluat jakaa sen muille.</p>
+
+<p>Tämä helpottuu ns. branching-ajattelulla, jonka Git tekee helpoksi. Sen sijaan, että toteutuskokeilun jälkeen vain peruuttaisit kaikki muutokset (jolloin menetät ne kokonaan), voit aloittaa toiminnallisuuden toteuttamisen omassa branchissaan (oksa tai haara). Luot oman branchin, joka ei vaikuta ns. masteriin (päähaara, johon kaikki muutokset oletusarvoisesti menee). Nyt voit omassa branchissasi tehdä muutoksia ja commitoida normaalisti. Jos toteutus onnistuu, voit liittää nämä commitit masteriin. Jos toteutus ei onnistu (tai muuten vaan haluat tehdä jotain muuta), niin valitset vain aktiiviseksi branchiksi masterin. Huom. voit myös jakaa oman branchisi muille. Näin muut pääsevät tarkastelemaan toteutustasi vaihtamalla heidän aktiivisen branchin sinun branchiksi. Tarkastelun jälkeen he voivat vaihtaa takaisin siihen branchiin, jossa olivat olleet aikaisemmin.</p>
+
+<p>Lisää ajatuksia ja branchien käyttötarkoituksia löytyy <a href="http://nvie.com/posts/a-successful-git-branching-model/">täältä</a>. Myös Martin Fowler on blogannut aiheesta <a href="http://martinfowler.com/bliki/FeatureBranch.html">feature branching</a>. </p>
+
+<h2>Github</h2>
+
+<p>Github on palvelu, jossa voit hostata projektejasi. Julkisia repositoryja voit tehdä rajattomasti. Opiskelijoille on myös tarjolla ilmainen micro-plan, joka oikeuttaa viiteen privaattiin repositoryyn: <a href="https://github.com/edu">https://github.com/edu</a>.</p>
+
+<p>Github on hyvä paikka säilöä esim. koulu- tai harrasteprojektit. Samalla teet hyvän vaikutuksen työhaastattelussa, kun sinulla on mahdollisuus näyttää koodiesimerkkejä.</p>
+
+<p><a href="../">← Takaisin etusivulle</a></p>
+
+    </div>    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laatua ohjelmistoissa - Käytännön ohjelmistotuotanto</title>
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
+    <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+    <div class="sixteen columns"><h1>Laatua tekniikoilla, konventioilla ja suunnittelumalleilla</h1>
+
+<p>Miksi ja miten tehdä siedettävää koodia, jota muutkin pystyvät ymmärtämään, eikä se hajoa käsiin? Kannattaa aloittaa pohdiskelu Uncle Bobin kohta jo 10 vuotta vanhalla, mutta silti pätevällä <a href="http://www.artima.com/weblogs/viewpost.jsp?thread=51769">vinkillä</a>.</p>
+
+<h2>Laatu, ja miksi panostaa siihen</h2>
+
+<p>Laatu voi olla hyvinkin subjektiivinen käsite. Mitä laatu ohjelmistoissa on? Laadun hahmottamista helpottaa, jos sen jakaa esim. sisäisiin (kehittäjien kokemiin) ja ulkoisiin (asiakkaan kokemiin) laatutekijöihin. Tässä esimerkiksi yksi jaottelu, mitä nämä <a href="http://www.ocoudert.com/blog/2011/04/09/what-is-software-quality/">sisäiset ja ulkoiset tekijät</a> voivat olla.</p>
+
+<p>Puutteet ulkoisissa laatutekijöissä tulee usein esille esim. toiminnallisuuteen tai käyttöliittymään tyytymättömän asiakkaan muodossa, mutta sisäiset laatupuutteet saattavat vaania piilossa kauemmin; asiakas ei nimittäin ohjelmistokoodia tarkastele vaan vastuu on ohjelmistokehittäjillä. Nämä puutteet kuitenkin saattaa tulla myöhemmin esille eri muodoissa:</p>
+
+<ul>
+<li>virheiden määrä kasvaa</li>
+<li>muutokset toiminnallisuuksissa vievät aina vaan enemmän aikaa</li>
+<li>kustannukset kasvavat.</li>
+</ul>
+
+<p>Laadun heikkeneminen voi johtua vaikka siitä, että oikaistaan ratkaisussa, jotta saadaan nopeasti jotain ulos. Tämä johtaa ns. <a href="http://www.scrumalliance.org/articles/14-technical-debt-and-design-death">tekniseen velkaan</a>. Tätä velkaa voi välttää tai vähentää esimerkiksi suunnittelulla, testien kirjoittamisella ja refaktoroinnilla.</p>
+
+<p>Mitä sitten refaktorointi on? Martin Fowler on muotoillut asian seuraavanlaisesti: "Refactoring is the process of changing a software system in such a way that it does not alter the external behavior of the code yet improves its internal structure". Täältä löytyy myös poimintoja käsitteestä, ja mitä siihen kuuluu: <a href="http://c2.com/cgi/wiki?WhatIsRefactoring">http://c2.com/cgi/wiki?WhatIsRefactoring</a>.</p>
+
+<blockquote>
+  <p>"When you feel the need to write a comment, first try to refactor the code so that any comment becomes unnecessary." - Martin Fowler </p>
+</blockquote>
+
+<h2>Code smells</h2>
+
+<p>Huonon koodin voi tunnistaa tarkkailemalla tiettyjä piirteitä. Nämä piirteet ovat yksinkertaisia, joten ne on helppo tunnistaa, mutta samalla niihin on helppo sortua. Suosittelen lukemaan seuraavan listan erilaisista "hajuista":
+<a href="http://www.codinghorror.com/blog/2006/05/code-smells.html">http://www.codinghorror.com/blog/2006/05/code-smells.html</a>.</p>
+
+<p>Tässä myös <a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=wmgnFbsaPvo">käytännönläheinen presentaatio</a> samaisesta aiheesta (PHP:n viitekehyksessä). Ja jos haluat opetella kirjoittamaan nimenomaan huonoa koodia, niin tähänkin löytyy <a href="http://thc.org/root/phun/unmaintain.html">ohjeistusta</a>. Huonoa koodia kirjoittaessa kannattaa kuitenkin muistaa, että joku (vaikka sinä itse) joutuu <a href="http://www.codinghorror.com/blog/2006/09/when-understanding-means-rewriting.html">sitä myöhemmin tulkitsemaan</a>.</p>
+
+<blockquote>
+  <p>"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." - Martin Fowler</p>
+</blockquote>
+
+<h2>Suunnittelumalleja, standardeja ja konventioita</h2>
+
+<p>Tämän otsikon alle on listattu muutamia järkeviä ajattelu- tai työskentelytapoja, jotka helpottavat laadun ylläpitämistä.</p>
+
+<h3>DRY</h3>
+
+<p>Do not repeat yourself, eli älä toista itseäsi. Ei siis copypasta-koodia!</p>
+
+<h3>Boyscout Rule</h3>
+
+<p>Partiolaisten sääntö: jätä leiripaikka siistimmäksi kuin mitä se oli tullessasi. Eli refaktoroi aikaisempaa koodia tarvittaessa.</p>
+
+<h3>Single Responsibility Principle</h3>
+
+<p>Yhdellä luokalla on yksi vastuualue. Vältetään monoliitteja, tuhansien rivien pituisia luokkia, jotka tekevät puolet järjestelmän toiminnoista.</p>
+
+<h3>Koodistandardit/-käytännöt</h3>
+
+<p>Yhdenmukaistetaan koodin ulkoasua (sisennökset, kommentointi, rakenteet) standardeilla. Esimerkkiä tästä: <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md">PHP: PSR-2 coding style guide</a> tai <a href="http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html">Code conventions for Java</a>. </p>
+
+<h3>Suunnittelumallit</h3>
+
+<p>Olio-ohjelmoinnin maailmaan kuuluu yleisiä suunnittelumalleja (design patterns), joilla voidaan ratkaista erilaisia ongelmakohtia. Näitä voit tarkastella esim. seuraavista lähteistä:</p>
+
+<ul>
+<li><a href="http://c2.com/cgi/wiki?SoftwareDesignPatternsIndex">http://c2.com/cgi/wiki?SoftwareDesignPatternsIndex</a></li>
+<li><a href="http://www.oodesign.com">http://www.oodesign.com</a></li>
+</ul>
+
+<h3>SOLID</h3>
+
+<p>Konsepti, joka koostuu tietyistä suunnittelumalleista, joilla pyritään vähentämään huonoa koodia: <a href="http://en.wikipedia.org/wiki/Solid_(object-oriented_design)">http://en.wikipedia.org/wiki/Solid<em>(object-oriented</em>design)</a>.</p>
+
+<h2>Työskentelymetodit ja -tekniikat</h2>
+
+<h3>Pariohjelmointi (Pair programming)</h3>
+
+<p>Pariohjelmoinnissa kaksi ohjelmoijaa työskentelee saman tehtävän parissa, mutta käytössä on vain yksi näppäimistö. Toisen rooli  on varsinaisen koodin kirjoittaminen (driver), kun taas toinen keskittyy suurempiin linjoihin: mitä seuraavaksi, voisiko tämän ratkaista paremmin, löytyykö virheitä (navigator). Rooleja vaihdetaan sovituin väliajoin. Lisää aiheesta: <a href="http://www2.yk.psu.edu/~sg3/cmpbd205/assign/week01/ACMarticlePairProgramming.pdf">http://www2.yk.psu.edu/~sg3/cmpbd205/assign/week01/ACMarticlePairProgramming.pdf</a>.</p>
+
+<h3>Koodin katselmointi (Code review)</h3>
+
+<blockquote>
+  <p>"A good developer should always want another dev to read his code, because that makes it possible for at least one of them to learn something" - Mario Fusco</p>
+</blockquote>
+
+<p>Koodin katselmointi on hyvä tapa oppia. Katselmoinnilla voi yhtenäistää käytännöt nopeasti, joka on erityisen hyödyllistä varsinkin jos olette aloittaneet  projektin uudella ryhmällä. Katselmointi voi kuulua osaksi arkipäivän rutiinia (esim. Pull Requestien yhteydessä), tai tiimi voi varata katselmoinnille kiinteän yhteisen ajan. Katselmointia voi hyödyntää esimerkiksi siinä tapauksessa, kun haluaa kuulla mielipiteen toteutuksesta (kun vaikka tehdään hyvin olennaista tai laajaa toiminnallisuutta).</p>
+
+<p><a href="http://www.codinghorror.com/blog/2006/01/code-reviews-just-do-it.html">http://www.codinghorror.com/blog/2006/01/code-reviews-just-do-it.html</a></p>
+
+<h3>TDD</h3>
+
+<p>Testivetoinen kehitys. Yksinkertaistettuna tarkoittaa sitä, että aina aluksi kirjoitetaan testitapaus, jota vasten toteutetaan varsinainen tuotantokoodi. Näin varmistetaan, että ohjelma tekee sen mikä on testien mukaan tarkoitus.</p>
+
+<h3>Pomodoro-tekniikka</h3>
+
+<p>Voi käyttää hyödyksi pariohjelmoinnissa, ja voi metodina auttaa saamaan asioita aikaiseksi: <a href="http://en.wikipedia.org/wiki/Pomodoro_Technique">http://en.wikipedia.org/wiki/Pomodoro_Technique</a>.</p>
+
+<p><a href="../">← Takaisin etusivulle</a></p>
+
+    </div>    </div>
+</body>
+</html>

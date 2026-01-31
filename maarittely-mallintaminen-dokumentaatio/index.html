@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Määrittely, mallintaminen, dokumentointi - Käytännön ohjelmistotuotanto</title>
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
+    <link rel="stylesheet" type="text/css" href="../css/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+    <div class="sixteen columns"><h1>Ohjelmistojen määrittely, mallintaminen ja dokumentointi</h1>
+
+<h2>Määrittely</h2>
+
+<p>Määrittelyssä lähdetään liikkeelle <em>asiakasvaatimusten selvittämisellä</em>. Kysymys kuuluukin: mitä asiakas tarvitsee? Ja tylsäähän se olisi, jos asiakas osaisi vastata tähän kysymykseen täydellisesti. Jokainen asiakas on erilainen.</p>
+
+<blockquote>
+  <p>"In dealing with customers, you must understand that there are things they <em>want</em> and things they <em>need</em>." - Larry Bernstein</p>
+</blockquote>
+
+<p>Määrittely on jatkuvaa ja orgaanista. Ideoita tulee ja menee projektin edetessä. On tärkeää, että oleelliset toiminnallisuudet saavat enemmän huomiota kuin satunnaiset päähänpistot. Tämän takia auttaa, jos <em>myös kehitystiimi ymmärtää asiakkaan liiketoimintaa</em>, jolloin heillä on mahdollisuus hahmottaa, mitä perimmäistä ongelmaa asiakkaan esittämällä vaatimuksella yritetään ratkaista. Jos ymmärretään ongelma, voidaan esittää siihen myös vaihtoehtoisia ratkaisuja (esim. ei toteuteta). <a href="http://en.wikipedia.org/wiki/MoSCoW_Method">MoSCoW-metodia</a> ja vastaavia kysymyksiä voi käyttää apuna vaatimusten prioriteettien selvittämisessä. Yritä saada asiakas ymmärtämään, että vaatimukset, ehdotukset ja muutokset maksavat. Tämä auttaa välttymään ns. <a href="http://en.wikipedia.org/wiki/Feature_creep">feature creepiltä</a>.</p>
+
+<p>Määrittelyvirhe voi tulla kalliiksi, ja virheen aiheuttama haitta eskaloituu sitä mukaa, mitä aikaisemmin virhe on tapahtunut ja mitä myöhemmin se on huomattu. Olen todennut wireframejen tai jopa prototyyppien olevan hyviä tapoja esittää onko asiakasvaatimus ymmärretty oikein. </p>
+
+<h2>UML</h2>
+
+<p>UML, Unified Modeling Language, on <em>visuaalinen</em> kieli, jota käytetään järjestelmien määrittelyyn, suunnitteluun ja dokumentointiin. UML on yleisesti tunnettu kuvausmenetelmä, jolla visualisoidaan pääasiassa oliopohjaisia järjestelmiä. UML:n perimmäinen tarkoitus on auttaa ymmärtämään järjestelmää pääosin teknisestä näkökulmasta. Yhtenäisen, standardoidun kielen tarkoitus on ohjata <em>yksiselitteisyyteen</em>, eli UML:ää osaavien pitäisi ymmärtää kuvatut asiat samalla tavalla. Huomaa, että myös ei-tekninen henkilö todennäköisesti ymmärtää asiat paremmin kaavioilla (esim. UML), tai ainakin paremmin kuin jos lähtisit esittelemään prosessia lähdekoodilla.</p>
+
+<p>UML:n tarkoitukseksi yleensä luonnetaan dokumentointi jälkikäteen tai suunnittelu etukäteen (jonka toteuttamisen voi ulkoistaa). Mutta sen sijaan, että dedikoitu UML-suunnittelija piirtäisi kiveenhakatut "ohjeet" ja antaisi ne ohjelmoijalle orjallisesti toteutettavaksi, kehittäjät voivat käyttää itse UML:ää hyödyksi ideoidessaan. UML-kaavioita voi hahmotella alustavia ideoita (jopa nopeammin kuin koodaamalla ja kokeilemalla) ja näin toivottavasti ohjata järjestelmää rakenteellisesti parempaan suuntaan.</p>
+
+<p>UML voi olla osa dokumentaatiota. Järjestelmän muuttuessa dokumentaatiota pitää päivittää, tai muuten se vanhenee nopeasti, jonka jälkeen sen tuoma hyöty katoaa. Pahimmillaan vanhentunut dokumentaatio voi aiheuttaa väärinymmärryksiä ja turhaa työtä. Jos siis UML:llä kuvataan järjestelmän osia tai prosesseja (joskus hyvinkin spesifisesti) niin kaaviot on myös päivitettävä muutosten yhteydessä. Ja tämähän taas vaatii työtä. Kannattaakin harkita, kuinka tarkasti päättää järjestelmän osia mallintaa. Huomaa, että sama pätee dokumentaation myös yleisellä tasolla. </p>
+
+<p>Jos UML:n käytännöllisyys mietityttää, niin <a href="http://stackoverflow.com/questions/18803/is-uml-practical">tässä keskustelua aiheesta</a>.
+</p>
+
+<h3>Käyttötapauskuvaus ja käyttötapauskaavio (Use Case Diagram)</h3>
+
+<p><a href="http://www.uml-diagrams.org/use-case-diagrams-examples.html">Käyttötapauskaavion</a> perustana toimii <em>käyttötapauskuvaus</em>. Käyttötapauskuvauksessa avataan toiminnallisuus sanallisesti. Käyttötapaukset ovatkin siis enemmän kirjoittamista, kuin kaavioiden avulla mallintamista. Käyttötapauskuvausten voisi sanoa olevan hyvin tarkasti kirjoitettuja käyttäjätarinoita (user story).</p>
+
+<p>Käyttötapausten kirjoittamisen avuksi voidaan määritellä tietty rakenne (vaikka taulukkomuodossa), jossa kerrotaan <a href="http://epf.eclipse.org/wikis/abrd/core.tech.common.extend_supp/guidances/examples/use_case_spec_CD5DD9B1.html">esim. esiehdot, kuvaus, sidosryhmät ja vaihtoehtoiset skenaariot</a>.</p>
+
+<h3>Luokkakaavio (Class Diagram)</h3>
+
+<p><a href="http://www.uml-diagrams.org/class-diagrams-examples.html">Luokkakaavio</a> kuvaa oliopohjaisen järjestelmän luokkarakenteen määrittely-/suunnittelutasolla. Esimerkiksi luokan metodit voidaan ilmaista pseudokoodilla ilman konkreettisia tyypityksiä. Luokkakaaviossa keskitytään rakenteen mallintamiseen yleisellä tasolla, josta selviää esim. seuraavat: </p>
+
+<ul>
+<li>rajapinnat, perintä, kompositio ja muut vastaavat yhteydet</li>
+<li>attribuutit ja metodit</li>
+<li>nimeäminen.</li>
+</ul>
+
+<p>Luokkakaavio voi auttaa rakenteellisesti järkevien OO-ratkaisujen hahmottelussa ja suunnittelussa.</p>
+
+<h3>Sekvenssikaavio (Sequence Diagram)</h3>
+
+<p><a href="http://www.uml-diagrams.org/sequence-diagrams-examples.html">Sekvenssikaavio</a> muodostaa yhdessä luokkakaavion kanssa yleisen tavan mallintaa olio-ohjelmia. Sekvenssikaaviolla mallinnetaan olioiden interaktioita viestien avulla, eli minkälaisia reaktioketjuja tietyt tapahtumat aiheuttavat. Käytännössä kaaviosta selviää, mitä muita metodeja jokin tietty metodi saattaa kutsua ja minkälaista tietoa näiden välillä liikkuu.
+Tämä myös auttaa hahmottamaan riippuvuuksia eri luokkien välillä.</p>
+
+<h3>Tilakaavio (State Diagram)</h3>
+
+<p><a href="http://www.uml-diagrams.org/state-machine-diagrams-examples.html">Tilakaaviota</a> käytetään olion tai järjestelmän tilan ja elinkaaren kuvaamiseen. Kaaviosta selviää myös sallitut tilasiirtymät (esim. dokumentti voi siirtyä "luonnos"-tilasta "julkaistu"-tilaan) Tilakaaviossa kuvataan seuraavat asiat:</p>
+
+<ul>
+<li>Olion alkutila</li>
+<li>Olion tilamuutokset (jotka johtuvat ulkoisista tapahtumista).</li>
+</ul>
+
+<h3>Aktiviteettikaavio (Activity Diagram)</h3>
+
+<p><a href="http://www.uml-diagrams.org/activity-diagrams-examples.html">Aktiviteettikaavio</a> muistuttaa tilakaavioita, mutta kuvaa prosesseja ja niissä tapahtumia peräkkäisiä tai rinnakkaisia toimintoja. Aktiviteettikaaviolla voidaan esimerkiksi ilmaista ostoprosessin tapahtumat.</p>
+
+<h2>Dokumentointi</h2>
+
+<p>Ohjelmistojen tekemiseen kuuluu tärkeänä osana myös dokumentointi. Dokumentointikäytännöt vaihtelevat organisaation ja käytössä olevien menetelmien mukaan. Dokumenttien määrään vaikuttavat myös esim. projektin koko, tiimin koko ja laatujärjestelmät. Kriittisemmät järjestelmät noudattavat usein tiukempia prosesseja, jotka vaativat kattavampaa dokumentaatiota. Ohjelmistoprojektiin saattaa kuulua esim. seuraavia dokumentteja:</p>
+
+<ul>
+<li>projektisuunnitelma</li>
+<li>(toiminnallinen) määrittely</li>
+<li>tekninen määrittely</li>
+<li>testaussuunnitelma</li>
+<li>käyttöönottosuunnitelma</li>
+<li>ylläpito-ohje</li>
+<li>käyttöohje.</li>
+</ul>
+
+<p>Seuraavaan listaan on koottu esimerkkejä erilaisista dokumenteista (niin koulu- kuin työelämästä).</p>
+
+<ul>
+<li><p><a href="http://www.cs.tut.fi/~otm/harjoitukset/tupa-maarittelydokumentti.pdf">Määrittelydokumentti</a>: TuPa-tilanhallintajärjestelmä, esimerkki</p></li>
+<li><p><a href="http://www.elka.fi/useruploads/files/Projektisuunnitelma_1.2.pdf">Projektisuunnitelma</a>: Arkistojärjestelmän suunnittelu ja prototyyppi</p></li>
+<li><p><a href="http://www.vm.fi/vm/fi/04_julkaisut_ja_asiakirjat/03_muut_asiakirjat/20101208Julkis/05_PERA_tekninen_maeaerittely_20101208.pdf">Tekninen suunnitelma (luonnos)</a>: Julkishallinnon tietovarantojen yhteinen rajapintaratkaisu</p></li>
+<li><p><a href="https://www.kanta.fi/fi/hl7">Erilaisia dokumentteja</a> liittyen Kansallisen Terveysarkiston rajapintoihin (esim. eReseptin-rajapintamääritykset)</p></li>
+</ul>
+
+<p><a href="../">← Takaisin etusivulle</a></p>
+
+    </div>    </div>
+</body>
+</html>
